@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+
+:root{
+    --clr-cyan: hsl(179, 62%, 43%);
+    --clr-brightyellow: hsl(71, 73%, 54%);
+    --clr-lightgrey: hsl(204, 43%, 93%);
+    --clr-blue: hsl(218, 22%, 67%);
+
+    --ff-primary: 'Karla', sans-serif;
+}
+
+*, *::before, *::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: var(--clr-lightgrey);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container{
+    background-color: white;
+    border-radius: 15px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    width: 700px;
+    font-family: var(--ff-primary);
+    box-shadow: 5px 5px 20px rgba(141, 141, 141, 0.507);
+}
+
+.top{
+    padding-top: 2.5rem;
+    padding-left: 2.5rem;
+    padding-right: 6rem;
+    padding-bottom: 2.5rem;
+}
+
+.top h1{
+    color: var(--clr-cyan);
+    font-size: 23px;
+    font-weight: bold;
+}
+
+.top h2{
+    color: var(--clr-brightyellow);
+    margin-top: 1rem;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.top p{
+    color: var(--clr-blue);
+    margin-top: 0.8rem;
+    line-height: 1.5rem;
+    font-size: 16px;
+}
+
+.bottom{
+    display: flex;
+}
+
+.left{
+    display: flex;
+    flex-direction: column;
+    background-color: var(--clr-cyan);
+    padding-top: 2.5rem;
+    padding-left: 2.5rem;
+    padding-bottom: 2.5rem;
+    color: white;
+    width: 50%;
+}
+
+.month{
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+}
+
+.price{
+    display: flex;
+    align-items: center;
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+}
+
+.price span{
+    font-size: 16px;
+    font-weight: lighter;
+    color: rgba(255, 255, 255, 0.685);
+    margin-left: 0.7rem;
+}
+
+.left a{
+    text-decoration: none;
+    color: white;
+    background-color: var(--clr-brightyellow);
+    border-radius: 10px;
+    width: 250px;
+    padding: 1rem;
+    text-align: center;
+    font-weight: bold;
+    font-size: 16px;
+    margin-top: 2rem;
+    box-shadow: 5px 5px 20px rgba(141, 141, 141, 0.507);
+}
+
+.right{
+    display: flex;
+    flex-direction: column;
+    background-color: hsl(179, 62%, 47%);
+    width: 50%;
+    padding-left: 2.5rem;
+    padding-top: 2.5rem;
+    padding-right: 6rem;
+    padding-bottom: 2.5rem;
+}
+
+.why{
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.right p{
+    color: rgba(255, 255, 255, 0.753);
+    font-size: 16px;
+    line-height: 1.5rem;
+}
